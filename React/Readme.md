@@ -1,0 +1,1 @@
+Array = Multiple data , Multiple type , Store data of similar types
