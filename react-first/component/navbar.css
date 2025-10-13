@@ -1,0 +1,23 @@
+.nav
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name
+{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        padding: 30px 30px 30px 30px;
+        background-color: orange;
+        height: 150px;
+        width: 150px;
+        left: 40%;
+        top: 50%
+}
