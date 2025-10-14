@@ -1,23 +1,72 @@
-.nav
-{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-.name
-{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        padding: 30px 30px 30px 30px;
-        background-color: orange;
-        height: 150px;
-        width: 150px;
-        left: 40%;
-        top: 50%
+.nav h2 {
+  margin: 0;
 }
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800; /* hover color */
+}
+
+
+.id-card {
+  background-color: #ff9800; /* orange */
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+   margin: 200px auto; 
+  position: relative;
+}
+
+/* Header styling */
+.id-header h2 {
+  margin: 0 0 15px 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+/* Body details */
+.id-body p {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Footer styling */
+.id-footer {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+
+  position: fixed;
+  bottom: 0;
+  width: 98%;
+  margin-right: 10px;
+}
+
