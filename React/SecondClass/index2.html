@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Output Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-4 bg-red-200">
+  <div class="grid grid-cols-5 gap-3 bg-red-300 p-4 rounded">
+    <input type="text" id="name" class="border px-4 py-2" placeholder="Enter your name">
+    <input type="number" id="age" class="border px-4 py-2" placeholder="Enter your age">
+    <input type="text" id="occupation" class="border px-4 py-2" placeholder="Enter your occupation">
+    <input type="number" id="salary" class="border px-4 py-2" placeholder="Enter your salary">
+    <button onclick="handleClick()" class="border bg-slate-300 rounded px-4 py-2 hover:bg-slate-400">Click to Add</button>
+  </div>
+
+  <div id="outputDiv" class="mt-4 bg-white p-4 rounded shadow"></div>
+
+  <script>
+    let data = [];
+
+    function handleClick() {
+      let newData = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        occupation: document.getElementById('occupation').value,
+        salary: document.getElementById('salary').value
+      };
+
+     
+      data.push(newData);
+
+
+      document.getElementById('name').value = '';
+      document.getElementById('age').value = '';
+      document.getElementById('occupation').value = '';
+      document.getElementById('salary').value = '';
+
+
+      const outputDiv = document.getElementById('outputDiv');
+      outputDiv.innerHTML = data.map((item, index) => `
+        <div class="border-b py-2">
+          <p><strong>Person ${index + 1}</strong></p>
+          <p>Name: ${item.name}</p>
+          <p>Age: ${item.age}</p>
+          <p>Occupation: ${item.occupation}</p>
+          <p>Salary: ₹${item.salary}</p>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

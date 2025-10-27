@@ -206,10 +206,9 @@
 
 // console.log(a ,b, c,d);
 
+
 const form = document.getElementById("myForm");
-
 const nameIn = document.getElementById("name");
-
 const email = document.getElementById("email");
 const number = document.getElementById("number");
 const outputDiv = document.getElementById("output");

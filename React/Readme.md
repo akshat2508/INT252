@@ -12,3 +12,12 @@ index.html > main.jsx > App.jsx > component
 
 
 DATED : 17/10/2025 {Array functions , map reduce , reverse , to lower case , to uppercase  , .from , new Set(nums)}
+
+{
+Dated : 27/10/2025  - three ways to show data : console , DOM , and alert
+
+main.jsx is the parent compoennt
+dominos signup page
+
+<></> ==> These are called fragements if we dont want to use a parent div inside the compoennt so that it returns single value and doesnt give any error
+}

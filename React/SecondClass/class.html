@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Table Example</title>
+</head>
+<body>
+
+  <table border="1" id="newTable" style="border-collapse: collapse; width: 80%; text-align: left;">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Occupation</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody id="output"></tbody>
+  </table>
+
+  <script>
+
+    let data = [
+      { name: "Ram", age: 25, occupation: "Engineer", salary: 50000 },
+      { name: "Shyam", age: 28, occupation: "Teacher", salary: 40000 },
+      { name: "Krishan", age: 30, occupation: "Doctor", salary: 70000 }
+    ];
+
+
+    let element = document.getElementById("output");
+
+
+    let newData = data.map(person => {
+      return `
+        <tr>
+          <td>${person.name}</td>
+          <td>${person.age}</td>
+          <td>${person.occupation}</td>
+          <td>${person.salary}</td>
+        </tr>
+      `;
+    });
+
+
+    element.innerHTML = newData.join('');
+  </script>
+
+</body>
+</html>
