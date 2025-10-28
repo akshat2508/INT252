@@ -21,3 +21,9 @@ dominos signup page
 
 <></> ==> These are called fragements if we dont want to use a parent div inside the compoennt so that it returns single value and doesnt give any error
 }
+
+{
+
+    create element , append , inner html m, what are these for next class , class component also
+    tuesday commit
+}
