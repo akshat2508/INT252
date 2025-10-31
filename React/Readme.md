@@ -27,3 +27,7 @@ dominos signup page
     create element , append , inner html m, what are these for next class , class component also
     tuesday commit
 }
+
+{
+    component , hooks , props , 
+}
