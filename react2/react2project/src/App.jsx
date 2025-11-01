@@ -52,6 +52,11 @@ const App = () => {
             alt="Offer 3"
             className="rounded-lg hover:scale-105 transition-transform duration-300"
           />
+          <img
+            src="./src/assets/offer1.png"
+            alt="Offer 3"
+            className="rounded-lg hover:scale-105 transition-transform duration-300"
+          />
         </div>
       </section>
 
