@@ -21,13 +21,18 @@ const App = () => {
     url : 'https://getyourcollege.s3.ap-south-1.amazonaws.com/college/images/1748253771746.jpeg',
     title : 'LPU3' ,
     description : 'Lovly Professional University'
+  },
+  {
+    url : 'https://getyourcollege.s3.ap-south-1.amazonaws.com/college/images/1748253771746.jpeg',
+    title : 'LPU3' ,
+    description : 'Lovly Professional University'
   }
 ]
 
   return (
     <>
     <Navbar/>
-    <CardContainer props = {cardData} />
+    <CardContainer cards = {cardData} />
     </>
   )
 }

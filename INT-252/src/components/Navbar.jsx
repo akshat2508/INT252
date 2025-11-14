@@ -9,7 +9,7 @@ const Navbar = () => {
           <img
             src="https://cdn.universitykart.com//Content/upload/admin/03dtozib.5kq.png"
             alt="lpu chancellor"
-            className="w-full object-contain border-1 rounded-xl"
+            className="w-full object-contain border rounded-xl"
           />
         </div>
 

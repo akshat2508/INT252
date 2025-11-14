@@ -1,17 +1,13 @@
 import React from 'react'
 import Cards from './Cards'
 
-const CardContainer = (props) => {
+const CardContainer = ({ cards }) => {
   return (
-    <>
-    <div className='grid grid-cols-3 gap-4 p-4'>
-      <Cards data={props[0]}/>
-      <Cards data={props[1]}/>
-      <Cards data={props[2]}/>
-
-
+    <div className="grid grid-cols-3 gap-4 p-4">
+      <Cards data={cards[0]} />
+      <Cards data={cards[1]} />
+      <Cards data={cards[2]} />
     </div>
-    </>
   )
 }
 
