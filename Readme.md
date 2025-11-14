@@ -36,3 +36,10 @@ dominos signup page
     TODO project initialisation
     
 }
+{
+    new INT-252 project
+
+    <> </> :-> THese are called fragments
+    hover:scale-100 duration-300 -> used to add hover effect on buttons cards
+    
+}
