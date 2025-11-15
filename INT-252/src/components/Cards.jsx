@@ -16,4 +16,5 @@ const Cards = ( {data} ) => {
   )
 }
 
+
 export default Cards
