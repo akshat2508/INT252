@@ -1,21 +1,11 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
+import Reminder from './components/reminder'
+
 
 const App = () => {
-
-    let data = useRef();
-
-    function handleClick()
-    {
-      
-    }
   return (
     <>
-      <h1>hello</h1>
-      <h1>Hello world 2</h1>
-      <h1>hello world 2</h1>
-            <h1>hello world 2</h1>
-            <h1></h1>
-
+      <Reminder/>
     </>
   )
 }
