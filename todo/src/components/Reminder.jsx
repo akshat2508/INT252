@@ -1,43 +1,26 @@
-import React, { useRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Reminder = () => {
-  const inputData = useRef();
-  const [data, setData] = useState([]);
+const Counter = () => {
+  const [count, setCount] = useState(0);
 
-  function handleClick() {
-    const value = inputData.current.value.trim();
-
-    if (!value) return; // prevent empty items
-
-    setData([value, ...data]);
-    inputData.current.value = '';
-  }
+  useEffect(() => {
+    console.log("Count updated:", count);
+  }, [count]);  
 
   return (
     <>
-      <div className='flex justify-evenly items-center mt-50'>
-        <input 
-          type="text" 
-          ref={inputData} 
-          className="border px-2 py-1"
-        />
-        <button 
-          onClick={handleClick}
-          className="bg-blue-500 text-white px-3 py-1 rounded"
-        >
-          Click to add
-        </button>
-      </div>
+      <div className="flex flex-col items-center mt-20">
+        <h1 className="text-3xl font-bold mb-4">Count: {count}</h1>
 
-      <div className="mt-4">
-        {data.map((item, index) => (
-          <div key={index} className="p-2 border-b">
-            {item}
-          </div>
-        ))}
+        <button
+          onClick={() => setCount(count + 1)}
+          className="bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          Increment
+        </button>
       </div>
     </>
   );
 };
 
-export default Reminder;
+export default Counter;
