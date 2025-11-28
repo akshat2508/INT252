@@ -1,6 +1,7 @@
 
 import React , { useState } from 'react'
 import Form from "./components/Form"
+import MyContext from './components/MyContext';
 
 const App = () => {
   let [data,  setData] = useState([]);
@@ -13,9 +14,15 @@ const App = () => {
 }
 
   return (
-    <div>
-      <Form handleFunction={handleAddData} data={data} handleDelete={handleDeleteData} />
-      </div>
+    <>
+    <MyContext.Provider value={{handleAddData , handleDeleteData , data}}>
+
+      <Form />
+    </MyContext.Provider>
+
+
+
+      </>
   )
 }
 

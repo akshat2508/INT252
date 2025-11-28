@@ -1,6 +1,8 @@
-import React , {useRef} from 'react'
+import React , {useContext, useRef} from 'react'
+import MyContext from './MyContext';
 
-const FormInput = ({handleFunction}) => {
+const FormInput = () => {
+    let {handleAddData} = useContext(MyContext);
     let inputData = useRef();
     let stuReg = useRef();
     let stuCgpa = useRef();
@@ -12,7 +14,7 @@ const FormInput = ({handleFunction}) => {
         RegNo : stuReg.current.value,
         Cgpa : stuCgpa.current.value
       }
-        handleFunction(studetnData);
+        handleAddData(studetnData);
     }
 
   return (

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import MyContext from './MyContext'
 
-const FormOutput = ({data , handleDelete}) => {
-
+const FormOutput = () => {
+ let {handleDeleteData , data} = useContext(MyContext);
   return (
     <>
     {data.map((value, index) => (
@@ -11,7 +12,7 @@ const FormOutput = ({data , handleDelete}) => {
           <span className='w-20%] text-black text-2xl font-bold'>{value.RegNo}</span>
         <span className='w-[10%] text-black text-2xl font-bold'>{value.Cgpa}</span>
 
-        <button className='w-[25%] bg-amber-700 text-white py-2 rounded' onClick={() => handleDelete(index)}>Delete</button>
+        <button className='w-[25%] bg-amber-700 text-white py-2 rounded' onClick={() => handleDeleteData(index)}>Delete</button>
     </div>
 ))}
 
