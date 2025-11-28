@@ -57,3 +57,7 @@ dominos signup page
 {
     todo list , use ref  , use state , and props
 }
+
+{
+    COMPLETE todo , useref , multiple inputs , put and delete object array 
+}

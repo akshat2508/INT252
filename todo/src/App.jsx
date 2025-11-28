@@ -8,13 +8,13 @@ const App = () => {
   {
     setData((old) => [e, ...old])
   }
- function deleteData(index) {
-  setData(old => old.filter((_, i) => i !== index));
+ function handleDeleteData(index) {
+  setData(old => old.filter((value, i) => i !== index));
 }
 
   return (
     <div>
-      <Form handleFunction={handleAddData} data={data} handleDelete={deleteData} />
+      <Form handleFunction={handleAddData} data={data} handleDelete={handleDeleteData} />
       </div>
   )
 }
