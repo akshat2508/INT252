@@ -9,12 +9,12 @@ const FormInput = () => {
 
     function handleClick()
     {
-      let studetnData = {
+      let studentData = {
         name: inputData.current.value,
         RegNo : stuReg.current.value,
         Cgpa : stuCgpa.current.value
       }
-        handleAddData(studetnData);
+        handleAddData(studentData);
     }
 
   return (
