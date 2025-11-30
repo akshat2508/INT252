@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import MyContext from '../../../todo/src/components/MyContext'
 
-const FormOutput = ({ data, handleDelete, regNo }) => {
+const FormOutput = () => {
+  let {data, handleDelete, regNo}  = useContext(MyContext);
   return (
+
     <>
       {data.map((value, index) => (
         <div

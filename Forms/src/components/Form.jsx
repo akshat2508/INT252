@@ -2,11 +2,11 @@ import React from 'react'
 import FormInput from './FormInput'
 import FormOutput from './FormOutput'
 
-const Form = ({handleFunction ,data , handleDelete , handleSearch , regNo}) => {
+const Form = () => {
   return (
      <>
-        <FormInput handleFunction={handleFunction} handleSearch={handleSearch}/>
-        <FormOutput data={data} handleDelete={handleDelete} handleSearch={handleSearch} regNo={regNo}/>
+        <FormInput />
+        <FormOutput/>
        </>
   )
 }

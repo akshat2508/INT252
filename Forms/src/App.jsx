@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Form from './components/Form'
+import MyContext from '../../todo/src/components/MyContext';
 
 const App = () => {
   let [data , setData] = useState([]);
@@ -19,9 +20,10 @@ const App = () => {
 
   }
   return (
-    <>
-    <Form handleFunction={handleAddData} data={data} handleDelete={handleDelete} handleSearch={handleSearch} regNo={regNo}/>
-    </>
+    <MyContext.Provider value = {{handleAddData , handleDelete  , handleSearch , regNo , data}}>
+    <Form/>
+    </MyContext.Provider>
+    
   )
 }
 

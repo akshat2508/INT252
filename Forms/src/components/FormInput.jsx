@@ -1,7 +1,9 @@
-import React, { useRef } from 'react'
+import React, { useContext, useRef } from 'react'
+import MyContext from '../../../todo/src/components/MyContext';
 
-const FormInput = ({handleFunction , handleSearch}) => {
-
+const FormInput = () => {
+    let {handleAddData} = useContext(MyContext);
+    let {handleSearch}  =useContext(MyContext);
     let name = useRef();
     let regno = useRef();
     let cgpa = useRef();
@@ -13,7 +15,7 @@ const FormInput = ({handleFunction , handleSearch}) => {
             regno: regno.current.value,
             cgpa : cgpa.current.value
         }
-        handleFunction(student);
+        handleAddData(student);
     }
 
 
