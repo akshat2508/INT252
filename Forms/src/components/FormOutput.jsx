@@ -13,7 +13,7 @@ const FormOutput = () => {
             flex justify-between items-center text-black border mb-2 p-6
             transform transition-transform duration-300 scale-100
             ${String(value.regno) === String(regNo)
-              ? "scale-110 border-green-300 border-4 bg-green-600"
+              ? "border-green-300 border-4 bg-green-600"
               : "bg-orange-600"
             }
           `}
