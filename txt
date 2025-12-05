@@ -1,0 +1,9 @@
+product inventory 
+navbar
+product form
+productCardGrid
+rproductCard
+footer
+
+form 
+image , name , price and cateory
