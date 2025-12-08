@@ -6,7 +6,8 @@ const FormOutput = () => {
   return (
 
     <>
-      {data.map((value, index) => (
+     {(data || []).map((value, index) => (
+
         <div
           key={index}
           className={`
@@ -19,9 +20,9 @@ const FormOutput = () => {
           `}
         >
           <span className='text-xl font-bold text-white'>{index + 1}</span>
-          <span className='text-xl font-bold text-white'>{value.name}</span>
-          <span className='text-xl font-bold text-white'>{value.regno}</span>
-          <span className='text-xl font-bold text-white'>{value.cgpa}</span>
+          <span className='text-xl font-bold text-white'>{value.email}</span>
+          <span className='text-xl font-bold text-white'>{value.password}</span>
+          <span className='text-xl font-bold text-white'>{value.phone}</span>
 
           <button
             className='p-1 bg-red-700 border-2 rounded-xl hover:bg-orange-600'
